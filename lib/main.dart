@@ -26,4 +26,5 @@ class MyApp extends StatelessWidget {
 }
 
 
-// ToDo: 
+// ToDo: build the shopping List App. Looks familiar to the todo app. Need a screen widget and an item widget.
+// ToDo: create the models based on the dummy data. category model, enum for different categories.
