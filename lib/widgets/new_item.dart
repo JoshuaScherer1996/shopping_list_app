@@ -28,6 +28,18 @@ class _NewItemState extends State<NewItem> {
                   return 'Demo...';
                 },
               ), // Instead of TextField()
+              Row(
+                children: [
+                  TextFormField(
+                    decoration: const InputDecoration(
+                      label: Text('Quantitiy'),
+                    ),
+                    initialValue: '1',
+                  ),
+                  const SizedBox(width: 8),
+                  DropdownButtonFormField(items: items, onChanged: onChanged)
+                ],
+              )
             ],
           ),
         ),
