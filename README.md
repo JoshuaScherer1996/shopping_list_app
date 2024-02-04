@@ -29,6 +29,6 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used a GlobalKey to keep the internal state and not rebuild the underlying widegt which was the form widget.
 - Used the GlobalKey to save user input.
 
-## Topics covered (Branch Basic)
+## Topics covered (Branch Backend)
 
 - Example
