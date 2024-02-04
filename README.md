@@ -38,3 +38,5 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Learned about the usage of status codes.
 - Learned about the response body provided by firebase.
 - Used mounted to check if the context is still associated with the widget we are currently in.
+- Used get to retrieve data.
+- Learned about dynamic datatype which means that we can mix different datatypes.
