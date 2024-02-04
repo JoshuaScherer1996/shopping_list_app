@@ -1,4 +1,4 @@
-# Shopping List
+# Shopping List (Basic)
 
 Shopping List is a Flutter app that helps you with your weekly shopping! You can add items on your screen with the fitting category, like meat or vegetable, and the ammount you need to by. This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
 
