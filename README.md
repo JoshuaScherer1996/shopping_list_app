@@ -34,3 +34,5 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Learned how to set up a [realtime database with firebase](https://firebase.google.com/docs/reference/rest/database).
 - Used the [HTTP package](https://pub.dev/packages/http) to make http requests to the realtime database.
 - Used the as keyword to bundle a package, here http, into an object.
+- Used the post method to post data to the database.
+- 
