@@ -35,4 +35,6 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used the [HTTP package](https://pub.dev/packages/http) to make http requests to the realtime database.
 - Used the as keyword to bundle a package, here http, into an object.
 - Used the post method to post data to the database.
-- 
+- Learned about the usage of status codes.
+- Learned about the response body provided by firebase.
+- Used mounted to check if the context is still associated with the widget we are currently in.
