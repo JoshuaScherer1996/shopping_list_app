@@ -60,7 +60,16 @@ class _NewItemState extends State<NewItem> {
                     ], onChanged: (value) {}),
                   )
                 ],
-              )
+              ),
+              const SizedBox(height: 12),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(onPressed: () {}, child: const Text('Reset')),
+                  ElevatedButton(
+                      onPressed: () {}, child: const Text('Add Item')),
+                ],
+              ),
             ],
           ),
         ),
