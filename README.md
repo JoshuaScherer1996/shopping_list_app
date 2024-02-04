@@ -25,3 +25,4 @@ Meals app is a Flutter app that helps you find the right meal for your needs! Be
 - Learned about the validator function and used it to validate user input.
 - Used TextFormField and DorpdownButtonFormField for more specific functionalities.
 - Used a GlobalKey to keep the internal state and not rebuild the underlying widegt which was the form widget.
+- Used the GlobalKey to save user input.
