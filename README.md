@@ -7,6 +7,7 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Adding new items to the list.
 - Removing items from the list.
 - Validating user input.
+- Connecting user input with a realtime database (Firebase).
 
 ### Screenshots 
 <div align="center">
