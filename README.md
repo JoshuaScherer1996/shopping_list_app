@@ -1,4 +1,4 @@
-# Shopping List (Backend)
+# Shopping List (FutureBuilder)
 
 Shopping List is a Flutter app that helps you with your weekly shopping! You can add items on your screen with the fitting category, like meat or vegetable, and the ammount you need to by. This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
 
@@ -7,6 +7,7 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Adding new items to the list.
 - Removing items from the list.
 - Validating user input.
+- Connecting user input with a realtime database (Firebase).
 
 ### Screenshots 
 <div align="center">
@@ -44,3 +45,6 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used the delete method to delete dara from my backend.
 - Learned how to throw an Exception in flutter.
 - Used try catch to utilize better error handling.
+
+## Topics covered (Branch FutureBuilder)
+- Example
