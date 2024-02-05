@@ -47,4 +47,5 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used try catch to utilize better error handling.
 
 ## Topics covered (Branch FutureBuilder)
-- Example
+- Learned about the future builder automatically updating the ui when the future it listens to is resolved.
+- Problems with futurebuilder not working properly in this app, which is why the approach in the backend branch is preferred.
