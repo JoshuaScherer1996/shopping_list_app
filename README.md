@@ -35,10 +35,12 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used the [HTTP package](https://pub.dev/packages/http) to make http requests to the realtime database.
 - Used the as keyword to bundle a package, here http, into an object.
 - Used the post method to post data to the database.
-- Learned about the usage of status codes.
+- Learned about the usage of status codes and how to handle errors with it.
 - Learned about the response body provided by firebase.
 - Used mounted to check if the context is still associated with the widget we are currently in.
 - Used get to retrieve data.
 - Learned about dynamic datatype which means that we can mix different datatypes.
 - Used CircularProgressIndicator to add a loading spinner to the screens.
 - Used the delete method to delete dara from my backend.
+- Learned how to throw an Exception in flutter.
+- Used try catch to utilize better error handling.
