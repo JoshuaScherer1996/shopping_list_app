@@ -19,7 +19,7 @@ class Category {
   // Constructor for creating a Category with a name and color.
   const Category(this.name, this.color);
 
-  // Class variables.
+  // Properties of the Category class:
   final String name;
   final Color color;
 }
