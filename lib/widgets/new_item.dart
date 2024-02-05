@@ -3,7 +3,9 @@ import 'package:shopping_list_app/data/categories.dart';
 import 'package:shopping_list_app/models/category.dart';
 import 'package:shopping_list_app/models/grocery_item.dart';
 
+// StatefulWidget for creating and adding a new item to the shopping list.
 class NewItem extends StatefulWidget {
+  // Constructor with optional Key parameter.
   const NewItem({super.key});
 
   @override
@@ -12,18 +14,23 @@ class NewItem extends StatefulWidget {
   }
 }
 
+// State class for NewItem, handling item creation logic and UI.
 class _NewItemState extends State<NewItem> {
-  final _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>(); // Key for identifying the form.
   var _enteredName = '';
   var _enteredQuantity = 1;
+  // Default selected category, initialized to vegetables.
   var _selectedCategory = categories[Categories.vegetables]!;
 
+  // Function to save the new item.
   void _saveItem() {
+    // Check if form inputs are valid.
     if (_formKey.currentState!.validate()) {
-      _formKey.currentState!.save();
+      _formKey.currentState!.save(); // Save form state.
+      // Pop current context and return the new GroceryItem.
       Navigator.of(context).pop(
         GroceryItem(
-            id: DateTime.now().toString(),
+            id: DateTime.now().toString(), // Unique ID based on current time.
             name: _enteredName,
             quantity: _enteredQuantity,
             category: _selectedCategory),
@@ -33,6 +40,7 @@ class _NewItemState extends State<NewItem> {
 
   @override
   Widget build(BuildContext context) {
+    // Scaffold provides the structure for the screen.
     return Scaffold(
       appBar: AppBar(
         title: const Text('Add a new item'),
@@ -40,13 +48,14 @@ class _NewItemState extends State<NewItem> {
       body: Padding(
         padding: const EdgeInsets.all(12),
         child: Form(
-          key: _formKey,
+          key: _formKey, // Associate the form with a GlobalKey.
           child: Column(
             children: [
               TextFormField(
                 maxLength: 50,
                 decoration: const InputDecoration(label: Text('Name')),
                 validator: (value) {
+                  // Validation for the name input field.
                   if (value == null ||
                       value.isEmpty ||
                       value.trim().length <= 1 ||
@@ -70,6 +79,7 @@ class _NewItemState extends State<NewItem> {
                       keyboardType: TextInputType.number,
                       initialValue: _enteredQuantity.toString(),
                       validator: (value) {
+                        // Validation for the quantity input field.
                         if (value == null ||
                             value.isEmpty ||
                             int.tryParse(value) == null ||
@@ -87,6 +97,7 @@ class _NewItemState extends State<NewItem> {
                   Expanded(
                     child: DropdownButtonFormField(
                       value: _selectedCategory,
+                      // Dropdown items created from categories.
                       items: [
                         for (final category in categories.entries)
                           DropdownMenuItem(
@@ -103,6 +114,7 @@ class _NewItemState extends State<NewItem> {
                             ),
                           ),
                       ],
+                      // Update state when a new category is selected.
                       onChanged: (value) {
                         setState(() {
                           _selectedCategory = value!;
@@ -118,12 +130,12 @@ class _NewItemState extends State<NewItem> {
                 children: [
                   TextButton(
                     onPressed: () {
-                      _formKey.currentState!.reset();
+                      _formKey.currentState!.reset(); // Reset form fields.
                     },
                     child: const Text('Reset'),
                   ),
                   ElevatedButton(
-                    onPressed: _saveItem,
+                    onPressed: _saveItem, // Save button triggers _saveItem.
                     child: const Text('Add Item'),
                   ),
                 ],
