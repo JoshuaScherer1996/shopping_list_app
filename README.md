@@ -41,3 +41,4 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used get to retrieve data.
 - Learned about dynamic datatype which means that we can mix different datatypes.
 - Used CircularProgressIndicator to add a loading spinner to the screens.
+- Used the delete method to delete dara from my backend.
